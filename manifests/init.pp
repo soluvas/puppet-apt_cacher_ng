@@ -12,7 +12,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class apt_cacher_ng(
-  $proxy = undef                 # e.g. http://192.168.66.17:3142
+  $proxy = ''                 # e.g. http://192.168.66.17:3142
 ) {
 
   package { apt-cacher-ng: ensure => installed }
@@ -22,7 +22,7 @@ class apt_cacher_ng(
   	subscribe => Package['apt-cacher-ng'],
   }
   file { '/etc/apt-cacher-ng/acng.conf':
-  	content => template('apt-cacher-ng/acng.conf.erb'),
+  	content => template('apt_cacher_ng/acng.conf.erb'),
   	mode    => 0644,
   	require => Package['apt-cacher-ng'],
   	notify  => Service['apt-cacher-ng'],

@@ -27,7 +27,7 @@ Port:3142
 #
 #Proxy: http://www-proxy.example.net:80
 #proxy: username:proxypassword@proxy.example.net:3128
-<% if !proxy.nil? -%>Proxy: <%= proxy %><% end -%>
+<% if !proxy.empty? %>Proxy: <%= proxy %><% end %>
 
 # Repository remapping. See manual for details.
 # In this example, some backends files might be generated during package
