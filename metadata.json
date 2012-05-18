@@ -1,0 +1,20 @@
+{
+  "name": "soluvas-apt-cacher-ng",
+  "author": "Hendy Irawan",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "1.0.0",
+  "checksums": {
+    "Modulefile": "56a5ff3b73ff35fcb5256017489801e8",
+    "README.textile": "aa08775208883d9e3f471ed8537bb8a7",
+    "manifests/init.pp": "23a4ff33b3f113ba7450e77e5a9bd32f",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "templates/acng.conf.erb": "0ef4a7a980e5c9282d3f75d328261657",
+    "tests/init.pp": "98dd16b818f7deb22a8afb1929907334"
+  },
+  "dependencies": []
+}

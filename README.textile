@@ -1,0 +1,13 @@
+h1. apt-cacher-ng module for Puppet
+
+h2. Simple Usage
+
+bc. include apt_cacher_ng
+
+
+h2. With Upstream Proxy
+
+bc.. 
+  class { apt_cacher_ng:
+    proxy => 'http://192.168.66.17:3142',
+  }
