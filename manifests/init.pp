@@ -12,7 +12,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class apt_cacher_ng(
-  $proxy = ''                 # e.g. http://192.168.44.17:3142
+  $proxy = ''                 # e.g. http://192.168.0.17:3142
 ) {
 
   package { apt-cacher-ng: ensure => installed }

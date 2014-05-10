@@ -9,5 +9,5 @@ h2. With Upstream Proxy
 
 bc.. 
   class { apt_cacher_ng:
-    proxy => 'http://192.168.44.17:3142',
+    proxy => 'http://192.168.0.17:3142',
   }
